@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="HG Electricidad - Servicios integrales: electricidad, construcción general, sanitaria, pintura, yeso y reformas en Uruguay.">
+    <title>HG Electricidad | Construcción y Reformas</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        header {
+            background: #1a3a5f;
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #4fc3f7;
+        }
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1504307651294-848b6e86f235?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 6rem 1rem;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        section {
+            padding: 3rem 0;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #1a3a5f;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .service-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        .service-card h3 {
+            margin-bottom: 1rem;
+            color: #1565c0;
+        }
+        .about-us {
+            background-color: #e3f2fd;
+        }
+        .contact {
+            background-color: white;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            padding: 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .btn {
+            background-color: #1565c0;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            align-self: flex-start;
+            transition: background 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+        .btn:hover {
+            background-color: #0d47a1;
+        }
+        .whatsapp-btn {
+            background-color: #25D366;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            margin-top: 1rem;
+            box-shadow: 0 2px 6px rgba(37, 211, 102, 0.4);
+        }
+        .whatsapp-btn:hover {
+            background-color: #128C7E;
+            transform: scale(1.03);
+        }
+        footer {
+            background: #1a3a5f;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+        @media (max-width: 600px) {
+            nav ul { flex-direction: column; gap: 0.5rem; }
+            nav ul li { margin-left: 0; }
+            .hero h1 { font-size: 2rem; }
+            .btn, .whatsapp-btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <h2 style="display: inline-block;">HG Electricidad</h2>
+                </div>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="container">
+            <h1>Servicios integrales de construcción y electricidad</h1>
+            <p>Electricidad, construcción general, sanitaria, pintura, yeso y reformas en todo Uruguay. ¡Calidad, rapidez y confianza garantizadas!</p>
+        </div>
+    </section>
+
+    <section id="servicios">
+        <div class="container">
+            <h2>Nuestros Servicios</h2>
+            <div class "services">
+                <div class="service-card">
+                    <h3>Electricidad</h3>
+                    <p>Instalaciones nuevas, reparaciones, cuadros eléctricos, iluminación LED y mantenimiento preventivo.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Construcción General</h3>
+                    <p>Viviendas, locales comerciales, ampliaciones y obras nuevas con materiales de primera.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Instalación Sanitaria</h3>
+                    <p>Redes de agua fría/caliente, desagües, cloacas y sistemas de bombeo.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Pintura y Acabados</h3>
+                    <p>Interiores y exteriores con productos duraderos y acabados impecables.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Yeso y Drywall</h3>
+                    <p>Cielorrasos, paredes móviles y diseños personalizados en yeso.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Reformas Integrales</h3>
+                    <p>Renovamos tu hogar o negocio de forma rápida, limpia y con presupuesto cerrado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros" class="about-us">
+        <div class="container">
+            <h2>Sobre Nosotros</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto;">
+                HG Electricidad es una empresa uruguaya con años de experiencia en el rubro de la construcción y la instalación eléctrica. 
+                Nos destacamos por la puntualidad, el trato honesto y el acabado impecable en cada trabajo. 
+                ¡Tu satisfacción es nuestra prioridad!
+            </p>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2>Contáctanos</h2>
+            <form class="contact-form" action="https://formspree.io/f/mqknjqgr" method="POST">
+                <input type="text" name="nombre" placeholder="Nombre" required />
+                <input type="email" name="email" placeholder="Correo electrónico" required />
+                <input type="tel" name="telefono" placeholder="Teléfono (opcional)" />
+                <textarea name="mensaje" rows="5" placeholder="Describe tu proyecto o consulta..." required></textarea>
+                <button type="submit" class="btn">Enviar Mensaje</button>
+            </form>
+
+            <a href="https://wa.me/59897028920?text=Hola,%20necesito%20una%20cotización%20para%20un%20trabajo%20de%20electricidad%20o%20construcción." 
+               class="whatsapp-btn" target="_blank">
+                <span>💬 Escríbenos por WhatsApp</span>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 HG Electricidad. Todos los derechos reservados.</p>
+            <p>WhatsApp: +598 97 028 920 | Email: hg.electricidad35@gmail.com</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
